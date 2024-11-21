@@ -129,6 +129,53 @@ void dance_layerswap_reset(tap_dance_state_t *state, void *user_data) {
     dance_state[DNC_RTN_L0].step = 0;
 }
 
+// allowing for OS swap and return to base layer from
+// higher layers consistently
+void dance_arrowmouseswap_finished(tap_dance_state_t *state, void *user_data);
+void dance_arrowmouseswap_reset(tap_dance_state_t *state, void *user_data);
+
+void dance_arrowmouseswap_finished(tap_dance_state_t *state, void *user_data) {
+    dance_state[DNC_ARROWMOUSE].step = dance_step(state);
+
+    switch (dance_state[DNC_ARROWMOUSE].step) {
+        case SINGLE_TAP:
+            if (layer_state_is(GAMING_LAYOUT)) {
+                // noop
+            } else if (get_highest_layer(layer_state) == NUMKEYS_LAYOUT) {
+                layer_off(NUMKEYS_LAYOUT);
+            } else {
+                layer_on(NUMKEYS_LAYOUT);
+            }
+            break;
+        case SINGLE_HOLD:
+            layer_on(NAV_LAYOUT);
+            break;
+#if CONSOLE_ENABLE
+        case TRIPLE_TAP:
+            uprintf("layer state: %d\n", layer_state);
+            uprintf("mac state: %d\n", layer_state_is(OS_MAC_LAYOUT));
+            uprintf("layer state: %d\n", 1 << OS_WIN_LAYOUT | layer_state_is(OS_MAC_LAYOUT) << OS_MAC_LAYOUT );
+            break;
+#endif
+    }
+}
+
+
+void dance_arrowmouseswap_reset(tap_dance_state_t *state, void *user_data) {
+    wait_ms(10);
+    switch (dance_state[DNC_ARROWMOUSE].step) {
+#if CONSOLE_ENABLE
+        case SINGLE_TAP:
+            // noop
+            break;
+#endif
+        case SINGLE_HOLD:
+            layer_off(NAV_LAYOUT);
+            break;
+    }
+    dance_state[DNC_ARROWMOUSE].step = 0;
+}
+
 void dance_gameswap_finished(tap_dance_state_t *state, void *user_data);
 void dance_gameswap_reset(tap_dance_state_t *state, void *user_data);
 
@@ -402,6 +449,7 @@ tap_dance_action_t tap_dance_actions[] = {
         [DNC_CPS] = ACTION_TAP_DANCE_FN_ADVANCED(on_dance_5, dance_5_finished, dance_5_reset),
         [DNC_SUPER_ALT_TAB] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, super_alt_tab_finished, super_alt_tab_reset),
         [DNC_RTN_L0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_layerswap_finished, dance_layerswap_reset),
+        [DNC_ARROWMOUSE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_arrowmouseswap_finished, dance_arrowmouseswap_reset),
         [DNC_CURLY] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, curlyswap_finished, curlyswap_reset),
         [DNC_SQUARE] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, squareswap_finished, squareswap_reset),
         [DNC_BOOTLOADER] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_bootloader_finished, dance_bootloader_reset),
