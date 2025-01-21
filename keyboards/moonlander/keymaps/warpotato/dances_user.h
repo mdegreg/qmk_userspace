@@ -9,7 +9,6 @@ enum tap_dance_codes {
     DNC_CPS,
     DNC_SUPER_ALT_TAB,
     DNC_RTN_L0,
-    DNC_ARROWMOUSE,
     DNC_CURLY,
     DNC_SQUARE,
     DNC_BOOTLOADER,
