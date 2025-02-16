@@ -2,7 +2,7 @@
 # See rules at https://docs.qmk.fm/#/config_options?id=the-rulesmk-file
 
 # debug defs
-CONSOLE_ENABLE = no
+CONSOLE_ENABLE = yes
 COMMAND_ENABLE = no
 MOUSEKEY_ENABLE = no
 

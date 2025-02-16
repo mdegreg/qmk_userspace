@@ -223,8 +223,8 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
     [UTIL_LAYOUT] = {
         {HSV_RED}, {HSV_MINTGREEN}, {HSV_MINTGREEN}, {HSV_RED}, {HSV_OFF},
-        {HSV_OFF}, {HSV_CYAN}, {HSV_CORAL}, {HSV_OFF}, {HSV_OFF},
-        {HSV_OFF}, {HSV_SEAGREEN}, {HSV_RED}, {HSV_ORANGE}, {HSV_WHITE},
+        {HSV_RED}, {HSV_CYAN}, {HSV_CORAL}, {HSV_OFF}, {HSV_OFF},
+        {HSV_RED}, {HSV_SEAGREEN}, {HSV_RED}, {HSV_ORANGE}, {HSV_WHITE},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_WHITE},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_WHITE},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF},
