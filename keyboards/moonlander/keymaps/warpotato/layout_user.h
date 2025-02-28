@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_CAPS_LOCK,       KC_A,           KC_S,           KC_D,               TD(DNC_FIND),   KC_G,                KC_H,                           KC_QUOTE,  KC_MINUS,   KC_J,        KC_K,                      KC_L,        KC_SCLN,       KC_VOLD,
     SC_LSPO,            KC_Z,           TD(DNC_XCUT),   TD(DNC_COPY),       TD(DNC_CPS),    KC_B,                                                            KC_SLASH,   KC_N,        KC_M,                      KC_COMMA,    KC_DOT,      SC_RSPC,
     TT(NUMKEYS_LAYOUT), KC_DEL,         TD(DNC_RTN_L0), TT(NAV_LAYOUT), LT(FKEYS_LAYOUT, KC_TAB),           TD(DNC_BACKSPACE),              TT(NUMKEYS_LAYOUT),      LT(FKEYS_LAYOUT, KC_SCLN), LT(NAV_LAYOUT, KC_LBRC), KC_RBRC, KC_TRANSPARENT, KC_LGUI,
-                                                        TD(DNC_SPACE),      MT(MOD_LCTL, KC_ENTER),   TD(DNC_SUPER_ALT_TAB),                    MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_SPC)
+                                                        TD(DNC_SPACE),      MT(MOD_LCTL, KC_ENTER),   TD(DNC_SUPER_ALT_TAB),                    MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_DOT)
   ),
   [OS_MAC_LAYOUT] = LAYOUT_moonlander(
       // minor modifications for mac os; most are handled via generic tapdance defs,
