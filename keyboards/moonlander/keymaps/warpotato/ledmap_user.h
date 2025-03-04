@@ -13,7 +13,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     [OS_WIN_LAYOUT] = {
         // main keys - left
         {HSV_ORANGE}, {HSV_WHITE}, {HSV_LIGHTBLUE}, {HSV_MAGENTA}, {HSV_WHITE}, // 4
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_RED}, // 9
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE}, // 9
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_CORAL}, // 14
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_CORAL}, // 19
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_LIGHTBLUE}, // 24
@@ -21,13 +21,13 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, // 31
 
         // thumb keys
-        {HSV_LIGHTBLUE}, {HSV_CHILLGREEN}, {HSV_WHITE}, // 34
+        {HSV_LIGHTBLUE}, {HSV_CHILLGREEN}, {HSV_ORANGE}, // 34
         {HSV_RED}, // left red key 35
 
         // main keys - right
         // note that these start from the rightmost column
         {HSV_OFF}, {HSV_CYAN}, {HSV_CORAL}, {HSV_MAGENTA}, {HSV_RED}, // 40
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_OFF}, // 45
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE}, // 45
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 50
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 55
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 60
@@ -36,29 +36,29 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
 
         // thumb keys
         {HSV_MAGENTA}, {HSV_ORANGE}, {HSV_ORANGE}, // 70
-        {HSV_REDKEYWHITE}  // right red key, 71
+        {HSV_RED}  // right red key, 71
     },
 
     [OS_MAC_LAYOUT] = {
         {HSV_ORANGE}, {HSV_WHITE}, {HSV_LIGHTBLUE}, {HSV_MAGENTA}, {HSV_WHITE},
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_RED},
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_CHILLGREEN},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_CHILLGREEN},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_LIGHTBLUE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE},
-        {HSV_LIGHTBLUE}, {HSV_CHILLGREEN}, {HSV_WHITE},
+        {HSV_LIGHTBLUE}, {HSV_CHILLGREEN}, {HSV_ORANGE},
         {HSV_RED},
 
         {HSV_OFF}, {HSV_CYAN}, {HSV_CORAL}, {HSV_MAGENTA}, {HSV_CHILLGREEN},
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_OFF},
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_OFF}, {HSV_YELLOW}, {HSV_YELLOW}, {HSV_WHITE},
         {HSV_OFF}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_MAGENTA}, {HSV_ORANGE}, {HSV_ORANGE},
-        {HSV_REDKEYWHITE}
+        {HSV_RED}
     },
 
     [NAV_LAYOUT] = {
@@ -82,7 +82,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF},
 
         {HSV_CHILLGREEN}, {HSV_OFF}, {HSV_OFF},
-        {HSV_REDKEYWHITE}
+        {HSV_RED}
     },
 
     [NUMKEYS_LAYOUT] = {
@@ -222,10 +222,10 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
     },
 
     [UTIL_LAYOUT] = {
-        {HSV_RED}, {HSV_MINTGREEN}, {HSV_MINTGREEN}, {HSV_RED}, {HSV_OFF},
+        {HSV_WHITE}, {HSV_MINTGREEN}, {HSV_MINTGREEN}, {HSV_RED}, {HSV_OFF},
         {HSV_RED}, {HSV_CYAN}, {HSV_CORAL}, {HSV_OFF}, {HSV_OFF},
         {HSV_RED}, {HSV_SEAGREEN}, {HSV_RED}, {HSV_ORANGE}, {HSV_WHITE},
-        {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_WHITE},
+        {HSV_RED}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_WHITE},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_WHITE},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF}, {HSV_OFF},
         {HSV_OFF}, {HSV_OFF}, {HSV_OFF},

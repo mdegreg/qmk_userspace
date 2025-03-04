@@ -17,11 +17,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRAVE,           KC_Q,           KC_W,           KC_E,               KC_R,           KC_T,                KC_Y,                           KC_BSLS,     KC_EQUAL,   KC_U,        KC_I,                      KC_O,        KC_P,        KC_VOLU,
     KC_CAPS_LOCK,       KC_A,           KC_S,           KC_D,               TD(DNC_FIND),   KC_G,                KC_H,                           KC_QUOTE,  KC_MINUS,   KC_J,        KC_K,                      KC_L,        KC_SCLN,       KC_VOLD,
     SC_LSPO,            KC_Z,           TD(DNC_XCUT),   TD(DNC_COPY),       TD(DNC_CPS),    KC_B,                                                            KC_SLASH,   KC_N,        KC_M,                      KC_COMMA,    KC_DOT,      SC_RSPC,
-    TT(NUMKEYS_LAYOUT), KC_DEL,         TD(DNC_RTN_L0), TT(NAV_LAYOUT), LT(FKEYS_LAYOUT, KC_TAB),           TD(DNC_BACKSPACE),              TT(NUMKEYS_LAYOUT),      LT(FKEYS_LAYOUT, KC_SCLN), LT(NAV_LAYOUT, KC_LBRC), KC_RBRC, KC_TRANSPARENT, KC_LGUI,
-                                                        TD(DNC_SPACE),      MT(MOD_LCTL, KC_ENTER),   TD(DNC_SUPER_ALT_TAB),                    MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_DOT)
-  ),
-  [OS_MAC_LAYOUT] = LAYOUT_moonlander(
-      // minor modifications for mac os; most are handled via generic tapdance defs,
+    TT(NUMKEYS_LAYOUT), KC_LALT,         TD(DNC_RTN_L0), TT(NAV_LAYOUT), LT(FKEYS_LAYOUT, KC_TAB),           TD(DNC_BACKSPACE),                  TD(DNC_BACKSPACE),      LT(FKEYS_LAYOUT, KC_SCLN), LT(NAV_LAYOUT, KC_LBRC), KC_RBRC, KC_RALT, KC_LGUI,
+                                                        TD(DNC_SPACE),      MT(MOD_LCTL, KC_ENTER),   MT(MOD_LALT, KC_QUOTE),                    MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_DOT)
+  ),  [OS_MAC_LAYOUT] = LAYOUT_moonlander(
+      // minor modifications for mac os; most are handled via generic tapdance defs,1
       // but ctrl/cmd swapping and layer switch cue are replaced here for simplicity
       // keeping this layer is handy for catching and triggering os-specific
       // keypress interception, even if its mostly duplicative
@@ -62,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       // gaming layout; adding additional access for number keys and
       // eliminating most tapdance options to reduce input lag.
       // set up to allow easy access for number and fn key layers
-    KC_ESCAPE,         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,
+    KC_TRANSPARENT,         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,
     KC_TAB,            KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,
     TD(DNC_GMODESWAP), KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,     KC_F,           KC_TRANSPARENT, KC_TRANSPARENT,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_LSFT,           KC_TRANSPARENT, KC_X,           KC_C,               KC_V,           KC_TRANSPARENT,                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
@@ -102,7 +101,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [UTIL_LAYOUT] = LAYOUT_moonlander(
       // Quick access for momentary toggle off of base layer
-    TD(DNC_BOOTLOADER),     QK_REBOOT, DB_TOGG ,         KC_TRANSPARENT,         KC_TRANSPARENT, KC_TRANSPARENT, STORE_SETUPS,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
+    KC_TRANSPARENT,        TD(DNC_BOOTLOADER),     QK_REBOOT, DB_TOGG ,          KC_TRANSPARENT, KC_TRANSPARENT, STORE_SETUPS,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_AUDIO_VOL_UP,        KC_BRMU,        KC_MEDIA_NEXT_TRACK,    KC_TRANSPARENT,    KC_TRANSPARENT, KC_TRANSPARENT, PRINT_SETUPS,                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_AUDIO_VOL_DOWN,      KC_BRMD,        KC_MEDIA_PREV_TRACK,    KC_TRANSPARENT,         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,               KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,
     KC_AUDIO_MUTE,          KC_TRANSPARENT, KC_MEDIA_PLAY_PAUSE,    KC_TRANSPARENT,         KC_TRANSPARENT, KC_TRANSPARENT,                                               KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,

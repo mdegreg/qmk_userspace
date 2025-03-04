@@ -7,7 +7,6 @@ enum tap_dance_codes {
     DNC_XCUT,
     DNC_COPY,
     DNC_CPS,
-    DNC_SUPER_ALT_TAB,
     DNC_RTN_L0,
     DNC_CURLY,
     DNC_SQUARE,

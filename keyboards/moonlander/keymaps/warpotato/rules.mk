@@ -18,7 +18,7 @@ MAGIC_ENABLE = no
 GRAVE_ESC_ENABLE = no
 
 # custom behavior
-SUPER_ALT_TAB_ENABLE = yes
+SUPER_ALT_TAB_ENABLE = no
 OS_SWAP_CMD_KEY_ENABLE = yes
 
 SRC += matrix.c

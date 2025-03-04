@@ -202,7 +202,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 void matrix_scan_user(void) { // The very important timer.
+#ifdef SUPER_ALT_TAB_ENABLE
     timeout_super_alt_tab();
+#endif
 }
 
 // tapping term control
