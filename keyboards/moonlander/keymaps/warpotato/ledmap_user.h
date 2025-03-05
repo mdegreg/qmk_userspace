@@ -27,7 +27,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         // main keys - right
         // note that these start from the rightmost column
         {HSV_OFF}, {HSV_CYAN}, {HSV_CORAL}, {HSV_MAGENTA}, {HSV_RED}, // 40
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE}, // 45
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_OFF}, {HSV_ORANGE}, // 45
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 50
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 55
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, // 60
@@ -51,7 +51,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         {HSV_RED},
 
         {HSV_OFF}, {HSV_CYAN}, {HSV_CORAL}, {HSV_MAGENTA}, {HSV_CHILLGREEN},
-        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_ORANGE},
+        {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_OFF}, {HSV_ORANGE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
