@@ -16,7 +16,8 @@
 
 // customization settings
 #undef RGB_DISABLE_TIMEOUT
-#define RGB_DISABLE_TIMEOUT 600000
+#define RGB_DISABLE_TIMEOUT 60 * 5 * 1000 // in milliseconds
+#define RGBLIGHT_SLEEP
 
 #undef TAPPING_TOGGLE
 #define TAPPING_TOGGLE 1
