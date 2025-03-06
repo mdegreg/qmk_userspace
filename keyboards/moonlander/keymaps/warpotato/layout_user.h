@@ -13,12 +13,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [OS_WIN_LAYOUT] = LAYOUT_moonlander(
       // baseline layout - mostly qwerty, with some keys shifted to emphasize
       // left hand typing + habitual movements
-    TD(DNC_ESC_LS),     KC_1,           KC_2,           KC_3,               KC_4,           KC_5,                KC_TRANSPARENT,                           KC_TRANSPARENT,    KC_6,    KC_7,        KC_8,                      KC_9,        KC_0, KC_TRANSPARENT,
-    KC_GRAVE,           KC_Q,           KC_W,           KC_E,               KC_R,           KC_T,                KC_TRANSPARENT,                           KC_BSLS,     KC_Y,   KC_U,        KC_I,                      KC_O,        KC_P,        KC_VOLU,
-    KC_CAPS_LOCK,       KC_A,           KC_S,           KC_D,               TD(DNC_FIND),   KC_G,                KC_TRANSPARENT,                           KC_QUOTE,  KC_H,   KC_J,        KC_K,                      KC_L,        KC_SCLN,       KC_VOLD,
-    KC_LSFT,            KC_Z,           TD(DNC_XCUT),   TD(DNC_COPY),       TD(DNC_CPS),    KC_B,                                                            KC_SLASH,   KC_N,        KC_M,                      KC_COMMA,    KC_TRANSPARENT,      KC_RSFT,
-    TT(NUMKEYS_LAYOUT), KC_LALT,        TD(DNC_RTN_L0), TT(NAV_LAYOUT),     MO(FKEYS_LAYOUT),           TD(DNC_BACKSPACE),                  TD(DNC_BACKSPACE),      MO(FKEYS_LAYOUT), LT(NAV_LAYOUT, KC_LBRC), KC_RBRC, KC_RALT, KC_LGUI,
-                                                        MT(MOD_LSFT, KC_SPC),      MT(MOD_LCTL, KC_ENTER),   MT(MOD_LALT, KC_QUOTE),                    MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_DOT)
+    TD(DNC_ESC_LS),     KC_1,           KC_2,           KC_3,                   KC_4,           KC_5,                KC_TRANSPARENT,        KC_TRANSPARENT, KC_6,   KC_7,        KC_8,                      KC_9,        KC_0, KC_TRANSPARENT,
+    KC_GRAVE,           KC_Q,           KC_W,           KC_E,                   KC_R,           KC_T,                KC_TRANSPARENT,        KC_BSLS,        KC_Y,   KC_U,        KC_I,                      KC_O,        KC_P,        KC_VOLU,
+    KC_CAPS_LOCK,       KC_A,           KC_S,           KC_D,                   TD(DNC_FIND),   KC_G,                KC_TRANSPARENT,        KC_QUOTE,       KC_H,   KC_J,        KC_K,                      KC_L,        KC_SCLN,       KC_VOLD,
+    KC_LSFT,            KC_Z,           TD(DNC_XCUT),   TD(DNC_COPY),           TD(DNC_CPS),    KC_B,                                       KC_SLASH,       KC_N,   KC_M,        KC_COMMA,    KC_TRANSPARENT,      KC_RSFT,
+    TT(NUMKEYS_LAYOUT), KC_LALT,        KC_TRANSPARENT, MO(NAV_LAYOUT),         MO(FKEYS_LAYOUT),           TD(DNC_BACKSPACE),              TD(DNC_BACKSPACE),      MO(FKEYS_LAYOUT), MO(NAV_LAYOUT), KC_RBRC, KC_RALT, KC_LGUI,
+                                                        MT(MOD_LSFT, KC_SPC),   MT(MOD_LCTL, KC_ENTER),   MT(MOD_LALT, KC_QUOTE),           MT(MOD_LALT, KC_QUOTE), MT(MOD_LCTL, KC_EQUAL),    MT(MOD_LSFT, KC_DOT)
   ),  [OS_MAC_LAYOUT] = LAYOUT_moonlander(
       // minor modifications for mac os; most are handled via generic tapdance defs,1
       // but ctrl/cmd swapping and layer switch cue are replaced here for simplicity
