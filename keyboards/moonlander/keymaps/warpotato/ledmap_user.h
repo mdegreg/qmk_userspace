@@ -35,7 +35,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         {HSV_OFF}, {HSV_WHITE}, {HSV_WHITE}, // 67
 
         // thumb keys
-        {HSV_MAGENTA}, {HSV_ORANGE}, {HSV_ORANGE}, // 70
+        {HSV_LIGHTBLUE}, {HSV_ORANGE}, {HSV_ORANGE}, // 70
         {HSV_RED}  // right red key, 71
     },
 
@@ -57,7 +57,7 @@ const uint8_t PROGMEM ledmap[][RGB_MATRIX_LED_COUNT][3] = {
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_ICEBLUE}, {HSV_WHITE}, {HSV_WHITE}, {HSV_WHITE},
         {HSV_OFF}, {HSV_WHITE}, {HSV_WHITE},
-        {HSV_MAGENTA}, {HSV_ORANGE}, {HSV_ORANGE},
+        {HSV_LIGHTBLUE}, {HSV_ORANGE}, {HSV_ORANGE},
         {HSV_RED}
     },
 
