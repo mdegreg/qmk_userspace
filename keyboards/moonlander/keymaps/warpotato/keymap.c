@@ -16,6 +16,7 @@
 #include "layers_user.h"
 #include "ledmap_user.h"
 #include "layout_user.h"
+#include "chordal_hold_user.h"
 #include "custom_keycodes.h"
 
 #if CONSOLE_ENABLE
