@@ -7,16 +7,12 @@ enum tap_dance_codes {
     DNC_XCUT,
     DNC_COPY,
     DNC_CPS,
-    DNC_RTN_L0,
-    DNC_CURLY,
-    DNC_SQUARE,
     DNC_BOOTLOADER,
     DNC_SPACE,
     DNC_BACKSPACE,
     DNC_LEFT,
     DNC_RIGHT,
     DNC_GMODESWAP,
-    DNC_CA,
     /*
     ** Do not change or move from bottom of enum. **
 

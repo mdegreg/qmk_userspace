@@ -8,7 +8,6 @@
 #endif
 
 #include "version.h"
-#include "alttab.h"
 #include "modifiers.h"
 #include "os_swap.h"
 #include "dances_taptypes.h"
