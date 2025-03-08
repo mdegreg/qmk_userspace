@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [FKEYS_LAYOUT] = LAYOUT_moonlander(
       // traditional 10 key numpad plus fn-key access, general layout
     _______, KC_F1,   KC_F2,      KC_F3,    KC_F4,                  KC_F5,       _______,       _______, KC_F6, 	KC_F7,    KC_F8,    KC_F9,      KC_F10,   _______,
-    _______, S(KC_1), S(KC_LBRC), S(KC_9),  KC_LBRC,                S(KC_COMMA), _______,       _______, S(KC_DOT), KC_RBRC,  S(KC_0),  S(KC_RBRC), S(KC_0),  _______,
-    _______, _______, _______,    KC_COMMA, KC_DOT,                 KC_BSLS,     _______,       _______, KC_SLASH,  KC_MINUS, KC_EQUAL, _______,    _______,  _______,
-    _______, S(KC_1), S(KC_2),    S(KC_3),  S(KC_4),                S(KC_5),                             S(KC_6),   S(KC_7),  S(KC_8),  S(KC_9),   S(KC_0),   _______,
+    _______,   _______, _______,    KC_COMMA, KC_DOT,                 KC_BSLS,  _______,       _______,  KC_SLASH,  KC_MINUS, KC_EQUAL, _______,    _______,  _______,
+    _______,  S(KC_1), S(KC_2),    S(KC_3),  S(KC_4),                S(KC_5),  _______,       _______, S(KC_6),   S(KC_7),  S(KC_8),  S(KC_9),   S(KC_0),   _______,
+    _______, S(KC_1), S(KC_LBRC), S(KC_9),  KC_LBRC,                S(KC_COMMA),                 S(KC_DOT), KC_RBRC,  S(KC_0),  S(KC_RBRC), S(KC_0),  _______,
     _______, _______, _______,    _______,  S(KC_MINUS),            _______,                    _______,            KC_SCLN,  _______,  _______,    _______,  _______,
                                             MT(MOD_LSFT, KC_TAB),   _______,  _______,          _______, _______,   MT(MOD_LSFT, KC_SCLN)
   ),
