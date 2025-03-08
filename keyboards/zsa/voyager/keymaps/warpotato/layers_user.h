@@ -9,5 +9,6 @@ enum {
     OS_MAC_LAYOUT,
     FKEYS_LAYOUT,
     NAV_LAYOUT,
+    NUM_LAYOUT,
     UTIL_LAYOUT
 };
