@@ -23,6 +23,7 @@ OS_SWAP_CMD_KEY_ENABLE = yes
 
 SRC += matrix.c
 SRC += modifiers.c
+SRC += dances_user.c
 
 # Build Options
 #   change yes to no to disable
