@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, KC_QUOTE,    KC_DOT,     KC_COMMA,             KC_BSLS,     _______,       _______,   KC_SLASH,  KC_EQUAL, KC_MINUS, KC_QUOTE,  _______,  _______,
     _______, S(KC_1), S(KC_2),    S(KC_3),    S(KC_4),              S(KC_5),     _______,       _______,   S(KC_6),   S(KC_7),    S(KC_8),  S(KC_9),  S(KC_0),   _______,
     _______, _______, KC_LBRC,    S(KC_LBRC), S(KC_9),              S(KC_COMMA),                S(KC_DOT), S(KC_0),   S(KC_RBRC), KC_RBRC,  _______,  _______,
-    _______, _______, _______,    _______,    S(KC_MINUS),                       _______,       _______,              KC_SCLN,    _______,  _______,  _______,  _______,
+    _______, _______, _______,    _______,    S(KC_MINUS),                       _______,       _______,              KC_DOT,    _______,   _______,  _______,  _______,
                                               MT(MOD_LSFT, KC_TAB), _______,     _______,       _______,   _______,   MT(MOD_LSFT, KC_SCLN)
   ),
   [GAMING_LAYOUT] = LAYOUT_moonlander(
