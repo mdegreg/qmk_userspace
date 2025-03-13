@@ -15,9 +15,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       // left hand typing + habitual movements
     TD(DNC_ESC_LS),     KC_1,    KC_2,         KC_3,                 KC_4,                   KC_5, _______,            _______,                 KC_6,                   KC_7,           KC_8,     KC_9,     KC_0,    _______,
     KC_GRAVE,           KC_Q,    KC_W,         KC_E,                 KC_R,                   KC_T, _______,            KC_BSLS,                 KC_Y,                   KC_U,           KC_I,     KC_O,     KC_P,    KC_VOLU,
-    KC_CAPS_LOCK,       KC_A,    KC_S,         KC_D,                 TD(DNC_FIND),           KC_G, _______,            KC_QUOTE,                KC_H,                   KC_J,           KC_K,     KC_L,     KC_SCLN, KC_VOLD,
+    KC_CAPS_LOCK,       KC_A,    KC_S,         KC_D,                 KC_F,                   KC_G, KC_TAB,             KC_QUOTE,                KC_H,                   KC_J,           KC_K,     KC_L,     KC_SCLN, KC_VOLD,
     KC_LSFT,            KC_Z,    TD(DNC_XCUT), TD(DNC_COPY),         TD(DNC_CPS),            KC_B,                                              KC_SLASH,               KC_N,           KC_M,     KC_COMMA, KC_DOT,  KC_RSFT,
-    TT(NUMKEYS_LAYOUT), KC_LALT, _______,      MO(NAV_LAYOUT),       MO(FKEYS_LAYOUT),       TD(DNC_BACKSPACE),        TD(DNC_BACKSPACE),       MO(FKEYS_LAYOUT),       MO(NAV_LAYOUT), _______,  KC_RALT,  KC_LGUI,
+    TT(NUMKEYS_LAYOUT), _______, _______,      MO(NAV_LAYOUT),       MO(FKEYS_LAYOUT),       TD(DNC_BACKSPACE),        TD(DNC_BACKSPACE),       MO(FKEYS_LAYOUT),       MO(NAV_LAYOUT), _______,  _______,  KC_LGUI,
                                                MT(MOD_LSFT, KC_SPC), MT(MOD_LCTL, KC_ENTER), MT(MOD_LALT, KC_QUOTE),   MT(MOD_LALT, KC_QUOTE),  MT(MOD_LCTL, KC_EQUAL), MT(MOD_LSFT, KC_SPC)
   ),  [OS_MAC_LAYOUT] = LAYOUT_moonlander(
       // minor modifications for mac os; most are handled via generic tapdance defs,1
@@ -32,11 +32,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         _______, MT(MOD_LGUI, KC_ENTER), _______,                 _______, MT(MOD_LGUI, KC_EQUAL), _______
   ),
   [NAV_LAYOUT] = LAYOUT_moonlander(
-    _______, _______, _______,      _______, _______,       _______, _______,                 _______, _______, _______,      _______, _______, KC_NO,   KC_NO,
-    _______, KC_PGUP, _______,      KC_UP,   KC_ENTER,      _______, _______,                 _______, _______, KC_HOME,      KC_PGUP,          KC_PGDN, KC_END,        KC_NO,
-    _______, KC_PGDN, TD(DNC_LEFT), KC_DOWN, TD(DNC_RIGHT), C(KC_C), _______,                 _______, _______, TD(DNC_LEFT), KC_UP,            KC_DOWN, TD(DNC_RIGHT), KC_NO,
-    _______, _______, _______,      _______, _______,       _______,                                            _______,      _______, _______, _______, _______,       _______,
-    _______, _______, _______,      _______, _______,                _______,                 _______,                        _______, _______, _______, _______,       _______,
+    _______, _______, _______,      _______, _______,       _______, _______,                 _______, _______, _______,      _______, _______, KC_NO,         KC_NO,
+    _______, KC_PGUP, _______,      KC_UP,   KC_ENTER,      _______, _______,                 _______, _______, KC_HOME,      KC_PGUP, KC_PGDN, KC_END,        KC_NO,
+    _______, KC_PGDN, TD(DNC_LEFT), KC_DOWN, TD(DNC_RIGHT), C(KC_C), _______,                 _______, _______, TD(DNC_LEFT), KC_UP,   KC_DOWN, TD(DNC_RIGHT), KC_NO,
+    _______, _______, _______,      _______, _______,       _______,                                   _______,      _______, _______, _______, _______,       _______,
+    _______, _______, _______,      _______, _______,                _______,                 _______,               _______, _______, _______, _______,       _______,
                                              _______,       _______, _______,                 _______, _______, KC_ENTER
   ),
     [NUMKEYS_LAYOUT] = LAYOUT_moonlander(
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [FKEYS_LAYOUT] = LAYOUT_moonlander(
       // traditional 10 key numpad plus fn-key access, general layout
     _______, KC_F1,   KC_F2,      KC_F3,      KC_F4,                KC_F5,       _______,       _______,   KC_F6, 	  KC_F7,      KC_F8,    KC_F9,    KC_F10,   _______,
-    _______, _______, _______,    KC_DOT,     KC_COMMA,             KC_BSLS,     _______,       _______,   KC_SLASH,  KC_EQUAL, KC_MINUS, _______,  _______,  _______,
+    _______, _______, KC_QUOTE,    KC_DOT,     KC_COMMA,             KC_BSLS,     _______,       _______,   KC_SLASH,  KC_EQUAL, KC_MINUS, KC_QUOTE,  _______,  _______,
     _______, S(KC_1), S(KC_2),    S(KC_3),    S(KC_4),              S(KC_5),     _______,       _______,   S(KC_6),   S(KC_7),    S(KC_8),  S(KC_9),  S(KC_0),   _______,
     _______, _______, KC_LBRC,    S(KC_LBRC), S(KC_9),              S(KC_COMMA),                S(KC_DOT), S(KC_0),   S(KC_RBRC), KC_RBRC,  _______,  _______,
     _______, _______, _______,    _______,    S(KC_MINUS),                       _______,       _______,              KC_SCLN,    _______,  _______,  _______,  _______,
