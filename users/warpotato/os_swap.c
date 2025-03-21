@@ -27,6 +27,7 @@ uint16_t os_bksp_mod = QK_LCTL;
 
 void set_os(int os){
     switch(os){
+        case OS_UNSURE:
         case OS_LINUX:
         case OS_WINDOWS:
             active_os = OS_WINDOWS;

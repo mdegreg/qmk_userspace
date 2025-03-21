@@ -45,8 +45,10 @@ void dance_esc_finished(tap_dance_state_t *state, void *user_data) {
         case DOUBLE_HOLD:
             current_layer = get_highest_layer(layer_state);
             if (current_layer == OS_WIN_LAYOUT) {
+                set_os(OS_MACOS);
                 layer_on(OS_MAC_LAYOUT);
             } else if (current_layer == OS_MAC_LAYOUT) {
+                set_os(OS_WINDOWS);
                 layer_off(OS_MAC_LAYOUT);
             } else {
                 layer_state_set(1 << OS_WIN_LAYOUT | layer_state_is(OS_MAC_LAYOUT) << OS_MAC_LAYOUT );
