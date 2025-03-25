@@ -19,25 +19,6 @@ HSV os_color_win = {HSV_CORAL};
 HSV os_color_mac = {HSV_CHILLGREEN};
 HSV (*os_indicator_hsv_color) = {&os_color_win};
 
-bool process_detected_host_os_user(os_variant_t detected_os) {
-    set_os(detected_os);
-    switch (detected_os) {
-        case OS_MACOS:
-        case OS_IOS:
-
-            layer_on(OS_MAC_LAYOUT);
-            break;
-        case OS_WINDOWS:
-            break;
-        case OS_LINUX:
-            break;
-        case OS_UNSURE:
-            break;
-    }
-
-    return true;
-}
-
 // layer color and swapping controls
 void set_layer_color(int layer) {
     for (int i = 0; i < RGB_MATRIX_LED_COUNT; i++) {
