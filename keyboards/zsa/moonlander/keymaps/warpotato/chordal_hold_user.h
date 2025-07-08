@@ -12,10 +12,11 @@
 const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT_moonlander(
       // baseline layout - mostly qwerty, with some keys shifted to emphasize
       // left hand typing + habitual movements
+      // suppress permissive hold on x-c-v keys
     'L', 'L', 'L', 'L', 'L', 'L', 'L',      'R', 'R', 'R', 'R', 'R', 'R', 'R',
     'L', 'L', 'L', 'L', 'L', 'L', 'L',      'R', 'R', 'R', 'R', 'R', 'R', 'R',
     'L', 'L', 'L', 'L', 'L', 'L', 'L',      'R', 'R', 'R', 'R', 'R', 'R', 'R',
-    'L', 'L', 'L', 'L', 'L', 'L',                'R', 'R', 'R', 'R', 'R', 'R',
+    'L', 'L', '*', '*', '*', 'L',                'R', 'R', 'R', 'R', 'R', 'R',
     'L', 'L', 'L', 'L', 'L',      '*',      '*',      'R', 'R', 'R', 'R', 'R',
                         '*', '*', '*',      '*', '*', '*'
   );
