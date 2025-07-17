@@ -37,20 +37,6 @@ void set_layer_color(int layer) {
     }
 }
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-# ifdef ORYX_ENABLE
-    layer_state_set_oryx(state);
-# endif
-    if (layer_state_is(OS_MAC_LAYOUT)){
-        set_os(OS_MACOS);
-        os_indicator_hsv_color = &os_color_mac;
-    } else {
-        set_os(OS_WINDOWS);
-        os_indicator_hsv_color = &os_color_win;
-    }
-    return state;
-}
-
 bool rgb_matrix_indicators_user(void) {
     int current_layer;
 
