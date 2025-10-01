@@ -62,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       // eliminating most tapdance options to reduce input lag.
       // set up to allow easy access for number and fn key layers
     _______,           _______, _______, _______,            _______, _______, KC_6,                    _______, _______, _______, _______, _______, _______, KC_NO,
-    KC_TAB,            _______, _______, _______,            _______, _______, KC_M,                 _______, _______, _______, _______, _______, _______, KC_NO,
+    KC_TAB,            _______, _______, _______,            _______, KC_I, KC_M,                 _______, _______, _______, _______, _______, _______, KC_NO,
     TD(DNC_GMODESWAP), _______, _______, _______,            KC_F,    _______, KC_J,                 _______, _______, _______, _______, _______, _______, _______,
-    KC_LSFT,           _______, KC_X,    KC_C,               KC_V,    _______,                                   _______, _______, _______, _______, _______, _______,
+    KC_LSFT,           _______, KC_X,    KC_C,               KC_V,    KC_LSFT,                                   _______, _______, _______, _______, _______, _______,
     KC_LCTL,           KC_LALT, KC_I, MO(NUMKEYS_GAMING), MO(FKEYS_GAMING), KC_BSPC,                 KC_BSPC,          _______, _______, _______, _______, _______,
                                          KC_SPACE,           KC_ENTER,         KC_LALT,                 _______, _______, _______
 
